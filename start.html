@@ -1,0 +1,554 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Getting Started &#8212; Symphony</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/thebelab-helper.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'start';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Available Components" href="components.html" />
+    <link rel="prev" title="Symphony" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Symphony</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Symphony
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components.html">Available Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creation.html">Creating a Component</a></li>
+<li class="toctree-l1"><a class="reference internal" href="state.html">Symphony State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common.html">Common Functionality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/start.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standalone-dashboard">Standalone Dashboard</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-from-a-notebook">Dashboard from a Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-from-a-python-script">Dashboard from a Python Script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h1>
+<p>Symphony is a framework that wraps task-specific visualization components for different environments.
+To load data into Symphony, only a Pandas-like metadata table is required.
+Symphony can be used in Jupyter Notebooks, created directly from Python scripts, and loaded as standalone web-based dashboards.
+Individual components have access to a shared state, which is kept in a shared toolbar component.
+This toolbar component synchronizes state between all active components and provides common interaction patterns.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<p>To install the main Symphony package, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>symphony_ui
+</pre></div>
+</div>
+<p>You can then install individual components, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>symphony_summary
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="components.html"><span class="doc">Available Components</span></a> for a list of all the other component packages. If you want to install all available components, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>symphony_ui<span class="o">[</span>widgets<span class="o">]</span>
+</pre></div>
+</div>
+<p>Symphony works great with <a class="reference external" href="https://github.com/apple/dnikit">DNIKit</a>.
+You can use DNIKit to generate analysis data for Symphony, for example for the Familiarity and Duplicates components.
+If you want to run the precomputed Symphony example that uses DNIKit, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>symphony_ui<span class="o">[</span>examples<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
+<p>Symphony can either be used as individual components in a Jupyter Notebook or as a combination of components in a standalone web dashboard. We currently do not support Jupyter Lab.</p>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this heading">#</a></h3>
+<p>First, we import the Symphony class and any components we would like to use, in this case only the <code class="code docutils literal notranslate"><span class="pre">SymphonySummary</span></code> component.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">symphony_ui</span> <span class="kn">import</span> <span class="n">Symphony</span>
+<span class="kn">from</span> <span class="nn">symphony_summary</span> <span class="kn">import</span> <span class="n">SymphonySummary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Next, for this example, we’ll create a simple Pandas DataFrame with some mock data.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>           a         b         c
+0  14.347001  1.466378  0.963370
+1  70.135179  4.182185  0.990549
+2  98.803726  7.855075  0.449859
+3  79.028908  8.838558  0.653995
+4  94.836530  6.305880  0.123163
+</pre></div>
+</div>
+</div>
+</div>
+<p>Combining these, we can create a Symphony instance and use our components to explore the data.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">symph</span> <span class="o">=</span> <span class="n">Symphony</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">symph</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">SymphonySummary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>That’s it! You can import different components and pass them to <code class="code docutils literal notranslate"><span class="pre">symph.widget()</span></code>.
+To see other components, check out more <a class="reference internal" href="examples.html"><span class="doc">Examples</span></a>.</p>
+</section>
+<section id="standalone-dashboard">
+<h3>Standalone Dashboard<a class="headerlink" href="#standalone-dashboard" title="Permalink to this heading">#</a></h3>
+<p>There are two ways to create and use a standalone dashboard.</p>
+<section id="dashboard-from-a-notebook">
+<h4>Dashboard from a Notebook<a class="headerlink" href="#dashboard-from-a-notebook" title="Permalink to this heading">#</a></h4>
+<p>If you are working from a notebook, you can export the current Symphony instance to a static folder using <code class="code docutils literal notranslate"><span class="pre">export()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">symph</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">&#39;./standalone/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="dashboard-from-a-python-script">
+<h4>Dashboard from a Python Script<a class="headerlink" href="#dashboard-from-a-python-script" title="Permalink to this heading">#</a></h4>
+<p>You can also create a standalone version from a Python script, making it possible to run on remote services or as a chron job.</p>
+<p>To do this, we use the <code class="code docutils literal notranslate"><span class="pre">standalone()</span></code> function which takes in which components you would like to include.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">symphony_ui</span> <span class="kn">import</span> <span class="n">Symphony</span>
+<span class="kn">from</span> <span class="nn">symphony_summary</span> <span class="kn">import</span> <span class="n">SymphonySummary</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span>
+
+<span class="n">symph</span> <span class="o">=</span> <span class="n">Symphony</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">symph</span><span class="o">.</span><span class="n">standalone</span><span class="p">([</span><span class="n">SymphonySummary</span><span class="p">],</span> <span class="s1">&#39;./standalone/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can then serve the Symphony export from the command line <code class="code docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">http.server</span></code> to see the dashboard.
+The static directory can be deployed to a service like GitHub Pages to share with others.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"fdb6c2b47fee49139dfdc9852f0d6cb5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": "unset", "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "100cc7aece9a4d21a1f8dfb3a0c0050c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": "unset", "padding": null, "right": null, "top": null, "visibility": null, "width": "100%"}}, "619ac964d6b74c488609c88cde349017": {"model_name": "ToolbarModel", "model_module": "symphony_ui", "model_module_version": "^1.0.0", "state": {"_dom_classes": [], "_model_module": "symphony_ui", "_model_module_version": "^1.0.0", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "symphony_ui", "_view_module_version": "^1.0.0", "_view_name": "ToolbarView", "filter": "", "group_columns": [], "layout": "IPY_MODEL_fdb6c2b47fee49139dfdc9852f0d6cb5", "selected": [], "symphony_spec": {"filesPath": "None", "dataType": 1, "instancesPerPage": 150, "showUnfilteredData": true, "idColumn": "id"}, "tabbable": null, "tooltip": null, "widget_spec": {"name": "toolbar"}}, "buffers": [{"data": "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", "encoding": "base64", "path": ["table"]}]}, "0f36717a22ef4591800b90421090ec33": {"model_name": "SymphonySummaryModel", "model_module": "symphony-summary", "model_module_version": "^1.0.0", "state": {"_dom_classes": [], "_model_module": "symphony-summary", "_model_module_version": "^1.0.0", "_model_name": "SymphonySummaryModel", "_view_count": null, "_view_module": "symphony-summary", "_view_module_version": "^1.0.0", "_view_name": "SymphonySummaryView", "filter": "", "group_columns": [], "layout": "IPY_MODEL_100cc7aece9a4d21a1f8dfb3a0c0050c", "selected": [], "symphony_spec": {}, "tabbable": null, "tooltip": null, "widget_spec": {"width": "XXL", "height": "M", "page": "Summary", "name": "SymphonySummary", "description": "The summary widget provides an overview of the data distribution. It can be used to get a general idea of what data a dataset contains.", "summaryElements": []}}, "buffers": [{"data": "", "encoding": "base64", "path": ["table"]}]}, "b6d66232e9b9488abcb07f039c180971": {"model_name": "DirectionalLinkModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DirectionalLinkModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": null, "source": ["IPY_MODEL_619ac964d6b74c488609c88cde349017", "table"], "target": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "table"]}}, "ade64f15067042aabda6fd15c219b509": {"model_name": "LinkModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LinkModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": null, "source": ["IPY_MODEL_619ac964d6b74c488609c88cde349017", "symphony_spec"], "target": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "symphony_spec"]}}, "7a8d16ca298d426986fa56822c5f6e6b": {"model_name": "LinkModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LinkModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": null, "source": ["IPY_MODEL_619ac964d6b74c488609c88cde349017", "selected"], "target": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "selected"]}}, "26a2f30742bc46158a12a73e2835e4a9": {"model_name": "LinkModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LinkModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": null, "source": ["IPY_MODEL_619ac964d6b74c488609c88cde349017", "filter"], "target": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "filter"]}}, "71826bfae39f47fd83b1d8852c265f5c": {"model_name": "LinkModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LinkModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": null, "source": ["IPY_MODEL_619ac964d6b74c488609c88cde349017", "group_columns"], "target": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "group_columns"]}}, "7bd5bda87950428fa7f75cc1e8b8ea00": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_0f36717a22ef4591800b90421090ec33", "IPY_MODEL_619ac964d6b74c488609c88cde349017"], "layout": "IPY_MODEL_100cc7aece9a4d21a1f8dfb3a0c0050c", "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Symphony</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="components.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Available Components</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standalone-dashboard">Standalone Dashboard</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-from-a-notebook">Dashboard from a Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-from-a-python-script">Dashboard from a Python Script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Apple
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Apple.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
