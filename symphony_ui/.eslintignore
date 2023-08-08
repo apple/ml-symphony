@@ -1,0 +1,5 @@
+node_modules
+dist
+**/*.d.ts
+tests
+lib

@@ -1,0 +1,36 @@
+include LICENSE.txt
+include README.md
+
+include pyproject.toml 
+include pytest.ini
+include .coverage.rc
+
+include tsconfig.json
+include package.json
+include webpack.config.js
+include symphony/labextension/*.tgz
+include yarn.lock
+include .yarnrc
+include postcss.config.js
+include tailwind.config.js
+include babel.config.js
+
+include symphony/standalone/favicon.png
+include symphony/standalone/index.html
+include symphony/standalone/widgets/StandaloneApp.js
+
+# Examples
+graft examples
+
+# Javascript files
+graft symphony/nbextension
+graft src
+graft lib
+prune **/node_modules
+
+# Patterns to exclude from any directory
+global-exclude *~
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .git
+global-exclude .ipynb_checkpoints

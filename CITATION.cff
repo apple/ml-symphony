@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bäuerle"
+  given-names: "Alex"
+- family-names: "Cabrera"
+  given-names: "Ángel Alexander"
+- family-names: "Hohman"
+  given-names: "Fred"
+- family-names: "Moritz"
+  given-names: "Dominik"
+title: "Symphony: Composing Interactive Interfaces for Machine Learning"
+version: 1.0.0
+date-released: 2023-04-01
+url: "https://github.com/apple/ml-symphony"
+preferred-citation:
+  type: conference-article
+  authors:
+    - family-names: "Bäuerle"
+      given-names: "Alex"
+    - family-names: "Cabrera"
+      given-names: "Ángel Alexander"
+    - family-names: "Hohman"
+      given-names: "Fred"
+    - family-names: "Maher"
+      given-names: "Megan"
+    - family-names: "Koski"
+      given-names: "David"
+    - family-names: "Suau"
+      given-names: "Xavier"
+    - family-names: "Barik"
+      given-names: "Titus"
+    - family-names: "Moritz"
+      given-names: "Dominik"
+  doi: "10.1145/3491102.3502102"
+  journal: "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+  title: "Symphony: Composing Interactive Interfaces for Machine Learning"
+  year: 2022
+  organization: "ACM"

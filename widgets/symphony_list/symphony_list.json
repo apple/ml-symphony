@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "symphony_list/extension": true
+  }
+}

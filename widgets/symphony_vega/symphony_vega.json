@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "symphony_vega/extension": true
+  }
+}

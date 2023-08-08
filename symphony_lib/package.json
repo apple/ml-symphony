@@ -1,0 +1,102 @@
+{
+  "name": "@apple/symphony-lib",
+  "version": "1.0.0",
+  "license": "Apple Sample Code",
+  "description": "Supporting components and types for Symphony widgets.",
+  "keywords": [
+    "Visualization",
+    "Svelte"
+  ],
+  "author": "Apple",
+  "repository": "https://github.com/apple/ml-symphony",
+  "bugs": {
+    "url": "https://github.com/apple/ml-symphony/issues"
+  },
+  "sideEffects": false,
+  "svelte": "dist/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.umd.js",
+  "types": "dist/ts/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "@fireflysemantics/join": "^1.0.14",
+    "@fortawesome/fontawesome-common-types": "^0.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@types/node": "^16.9.1",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.0",
+    "html2canvas": "^1.1.5",
+    "https-browserify": "^1.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "svelte-fa": "^2.2.1",
+    "svelte-select": "4.4.3",
+    "svelte-vega": "^1.1.0",
+    "typescript": "^4.4.3",
+    "url": "^0.11.0",
+    "vega": "^5.20.2",
+    "vega-lite": "^5.1.1",
+    "wavesurfer.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@jupyter-widgets/base": "^4.0.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.3.8",
+    "@tsconfig/svelte": "^2.0.1",
+    "add": "^2.0.6",
+    "arquero": "^4.8.4",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "fs-extra": "^10.0.0",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
+    "rollup": "^2.53.2",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-execute": "^1.1.1",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "svelte": "^3.42.5",
+    "svelte-check": "^2.2.6",
+    "svelte-loader": "^3.1.2",
+    "svelte-preprocess": "^4.9.8",
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.4.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.1.0"
+  },
+  "resolutions": {
+    "webpack": "4.46.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+Name|Description|Type
+:code:`filter` | The active filter that is applied to the backing metadata. | :code:`WidgetWritable<string>;`
+:code:`filterError` | The current error that the filter throws upon filtering. Empty if no error. | :code:`WidgetWritable<string>;`
+:code:`table` | The raw backing metadata table. | :code:`Readable<ColumnTable>;`
+:code:`symphonySpec` | The specification holding the file paths and other general information. | :code:`WidgetWritable<SymphonySpec>;`
+:code:`groupColumns` | Columns by which the metadata is grouped. | :code:`WidgetWritable<string[]>;`
+:code:`groupNames` | Names of all the groups. Result of a Cartesian product between all group names. | :code:`WidgetWritable<string[][]>;`
+:code:`groupedTables` | The grouped metadata tables (filters applied). | :code:`Readable<ColumnTable[]>;`
+:code:`filteredTable` | The filtered metadata table. | :code:`Readable<ColumnTable>;`
+:code:`selected` | A list of all selected data samples. | :code:`WidgetWritable<string[]>;`
+:code:`tooltip` | Specification of the position and content of the tooltip. | :code:`WidgetWritable<TooltipSpec>;`
+:code:`showRaw` | Whether to show the unfiltered data alongside the filtered data (mostly used for charts). | :code:`WidgetWritable<boolean>;`

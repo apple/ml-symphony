@@ -1,0 +1,12 @@
+Component|Description|Package
+Binary Confusion Matrix | .. mdinclude:: ../../widgets/symphony_binary_confusion_matrix/README.md | `symphony_binary_confusion_matrix <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_binary_confusion_matrix>`__
+Data Map | .. mdinclude:: ../../widgets/symphony_data_map/README.md | `symphony_data_map <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_data_map>`__
+Duplicates | .. mdinclude:: ../../widgets/symphony_duplicates/README.md | `symphony_duplicates <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_duplicates>`__
+FairVis | .. mdinclude:: ../../widgets/symphony_fairvis/README.md | `symphony_fairvis <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_fairvis>`__
+Familiarity | .. mdinclude:: ../../widgets/symphony_familiarity/README.md | `symphony_familiarity <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_familiarity>`__ 
+Hierarchical Confusion Matrix | .. mdinclude:: ../../widgets/symphony_hierarchical_confusion_matrix/README.md | `symphony_hierarchical_confusion_matrix <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_hierarchical_confusion_matrix>`__
+List | .. mdinclude:: ../../widgets/symphony_list/README.md | `symphony_list <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_list>`__ 
+Markdown | .. mdinclude:: ../../widgets/symphony_markdown/README.md | `symphony_markdown <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_markdown>`__
+Scatterplot | .. mdinclude:: ../../widgets/symphony_scatterplot/README.md | `symphony_scatterplot <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_scatterplot>`__
+Summary | .. mdinclude:: ../../widgets/symphony_summary/README.md | `symphony_summary <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_summary>`__
+Vega | .. mdinclude:: ../../widgets/symphony_vega/README.md | `symphony_vega <https://github.com/apple/ml-symphony/tree/main/widgets/symphony_vega>`__

@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "types": ["svelte"],
+    "noImplicitAny": true
+  },
+  "files": ["./src/index.ts"],
+  "include": ["src/**/*"]
+}

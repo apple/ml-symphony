@@ -1,0 +1,50 @@
+{
+  "name": "@apple/symphony-monorepo",
+  "version": "1.0.0",
+  "description": "symphony_ui, symphony_lib, and a collection of widgets.",
+  "keywords": [
+    "symphony",
+    "symphony_ui",
+    "symphony_lib",
+    "widgets"
+  ],
+  "author": "Apple",
+  "private": true,
+  "license": "Apple Sample Code",
+  "type": "module",
+  "scripts": {
+    "build": "yarn workspaces foreach exec run build",
+    "build:symphony": "yarn workspace @apple/symphony-ui build",
+    "build:lib": "yarn workspace @apple/symphony-lib build",
+    "build:docs": "yarn workspace @apple/symphony-lib build:storybook && cp -r symphony_lib/storybook-static docs/source/_static && make -C ./docs html",
+    "deploy:docs": "scripts/deploy-docs.sh",
+    "dev": "cd symphony_ui && yarn dev",
+    "watch:nbextension": "cd symphony_ui && yarn watch:nbextension",
+    "test": "pip3 install -r requirements.txt && scripts/dev-install.sh"
+  },
+  "browserslist": [
+    "last 3 chrome versions",
+    "last 3 firefox versions",
+    "last 3 safari versions",
+    "last 3 edge versions"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "workspaces": {
+    "packages": [
+      "symphony_lib/",
+      "symphony_ui/",
+      "widgets/*"
+    ],
+    "nohoist": [
+      "**/@storybook/**"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "packageManager": "yarn@3.6.1"
+}

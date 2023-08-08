@@ -1,0 +1,107 @@
+{
+  "name": "symphony-duplicates",
+  "version": "1.0.2",
+  "description": "Inspect potential duplicates in a dataset.",
+  "private": true,
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "widgets"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js",
+    "standalone/*"
+  ],
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "homepage": "https://github.com/apple/ml-symphony",
+  "bugs": {
+    "url": "https://github.com/apple/ml-symphony/issues"
+  },
+  "author": "Apple",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apple/ml-symphony"
+  },
+  "scripts": {
+    "build": "webpack --mode=development --progress && jupyter labextension build --development=True .",
+    "build:prod": "webpack --mode=production && jupyter labextension build .",
+    "clean": "yarn run clean:lib && yarn run clean:nbextension && yarn run clean:labextension",
+    "clean:lib": "rimraf lib",
+    "clean:labextension": "rimraf symphony/labextension",
+    "clean:nbextension": "rimraf symphony/nbextension/static/index.js",
+    "lint": "eslint . --ext .ts,.tsx,.svelte --fix",
+    "lint:check": "eslint . --ext .ts,.tsx,.svelte",
+    "prepack": "yarn run build:prod",
+    "watch": "yarn run watch:nbextension",
+    "watch:nbextension": "webpack --watch --mode=development --progress",
+    "watch:labextension": "jupyter labextension watch .",
+    "dev": "yarn run watch & python -m http.server --directory ./symphony_duplicates/standalone 8082"
+  },
+  "dependencies": {
+    "@apple/symphony-lib": "^1.0.0",
+    "@jupyter-widgets/base": "^1.1.10 || ^2.0.0 || ^3.0.0 || ^4.0.0",
+    "arquero": "^4.7.2",
+    "svelte-infinite-scroll": "^2.0.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@jupyterlab/builder": "^3.1.12",
+    "@phosphor/application": "^1.6.0",
+    "@phosphor/widgets": "^1.6.0",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tsconfig/svelte": "^2.0.1",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "@webpack-cli/serve": "^1.2.2",
+    "autoprefixer": "^10.3.4",
+    "commitizen": "^4.2.4",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "mkdirp": "^1.0.4",
+    "postcss": "^8.2.10",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^14.0.1",
+    "postcss-load-config": "^3.0.1",
+    "postcss-loader": "^6.1.0",
+    "precss": "^4.0.0",
+    "prettier": "^2.4.0",
+    "purgecss-from-svelte": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^3.2.1",
+    "svelte": "^3.42.5",
+    "svelte-loader": "^3.1.1",
+    "svelte-preprocess": "^4.9.4",
+    "tailwindcss": "^2.2.15",
+    "ts-loader": "^9.1.0",
+    "typescript": "~4.4.3",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^4.2.1",
+    "yarn-run-all": "^3.1.1"
+  },
+  "jupyterlab": {
+    "extension": "lib/index",
+    "outputDir": "symphony_duplicates/labextension/",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
