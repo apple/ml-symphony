@@ -297,7 +297,7 @@ document.write(`
   <section id="available-components">
 <h1>Available Components<a class="headerlink" href="#available-components" title="Permalink to this heading">#</a></h1>
 <p>Symphony contains a number of default components that can get you started with data and model analysis.
-These can be installed using <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-i</span> <span class="pre">package_name</span></code>, and passed into
+These can be installed using <code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">package_name</span></code>, and passed into
 Symphony using <cite>symph.widget(ComponentName)</cite>.</p>
 <table class="table">
 <colgroup>
@@ -319,6 +319,11 @@ Symphony using <cite>symph.widget(ComponentName)</cite>.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">label_column</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">prediction_column</span></code></p></li>
 </ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_binary_confusion_matrix
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_binary_confusion_matrix">symphony_binary_confusion_matrix</a></p></td>
 </tr>
@@ -335,12 +340,23 @@ To configure the map, the spec of this component is defined as follows:</p>
 </pre></div>
 </div>
 <p>The projection is a <code class="docutils literal notranslate"><span class="pre">vega-projection</span></code>, the <code class="docutils literal notranslate"><span class="pre">id_map</span></code> maps names to multiple <code class="docutils literal notranslate"><span class="pre">id</span></code> in a TopoJSON, the <code class="docutils literal notranslate"><span class="pre">feature</span></code> defines what column to color by, the <code class="docutils literal notranslate"><span class="pre">id_column</span></code> defines where names are to be found, and the <code class="docutils literal notranslate"><span class="pre">map_url</span></code> provides a link to the appropriate TopoJSON.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_data_map
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_data_map">symphony_data_map</a></p></td>
 </tr>
 <tr class="row-even"><td><p>Duplicates</p></td>
 <td><p>A component that displays data duplicates based on a column prefixed <code class="docutils literal notranslate"><span class="pre">duplicates_</span></code>.
-This column must contain lists of numbers that signal which duplicate group an item belongs to.</p></td>
+This column must contain lists of numbers that signal which duplicate group an item belongs to.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_duplicates
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
+</td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_duplicates">symphony_duplicates</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>FairVis</p></td>
@@ -350,13 +366,24 @@ The component is based on the <code class="docutils literal notranslate"><span c
 <li><p><code class="docutils literal notranslate"><span class="pre">prediction_column</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">label_column</span></code></p></li>
 </ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_fairvis
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_fairvis">symphony_fairvis</a></p></td>
 </tr>
 <tr class="row-even"><td><p>Familiarity</p></td>
 <td><p>A component that displays how familiar certain data points are within a dataset.
 This is useful for finding outliers and common instances.
-The familiarity metric is based on a column prefixed <code class="docutils literal notranslate"><span class="pre">familiarity_</span></code>, which must contain a number that indicates the familiarity value.</p></td>
+The familiarity metric is based on a column prefixed <code class="docutils literal notranslate"><span class="pre">familiarity_</span></code>, which must contain a number that indicates the familiarity value.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_familiarity
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
+</td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_familiarity">symphony_familiarity</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Hierarchical Confusion Matrix</p></td>
@@ -365,31 +392,45 @@ The familiarity metric is based on a column prefixed <code class="docutils liter
 <li><p><code class="docutils literal notranslate"><span class="pre">prediction_column</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">label_column</span></code></p></li>
 </ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_hierarchical_confusion_matrix
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_hierarchical_confusion_matrix">symphony_hierarchical_confusion_matrix</a></p></td>
 </tr>
 <tr class="row-even"><td><p>List</p></td>
-<td><p>A list view that displays all data instances, which is useful for exploring data with Symphony’s built in filters and grouping interactions.</p></td>
+<td><p>A list view that displays all data instances, which is useful for exploring data with Symphony’s built in filters and grouping interactions.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_list
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
+</td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_list">symphony_list</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Markdown</p></td>
 <td><p>A component to render HTML from markdown files.
-The provided markdown can be edited within the component.
-For example, displaying information about a particular analysis:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">report</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">SymphonyMarkdown</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="s2">&quot;Overview&quot;</span><span class="p">,</span>
-    <span class="n">width</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">,</span>
-    <span class="n">content</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;README.md&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="p">)</span>
+The provided markdown can be edited within the component.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_markdown
 </pre></div>
 </div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_markdown">symphony_markdown</a></p></td>
 </tr>
 <tr class="row-even"><td><p>Scatterplot</p></td>
 <td><p>A scatterplot visualization based on regl.
 Useful for visualizing embeddings that have been been reduced to two dimensions.
-Visualizes data based on columns prefixed with <code class="docutils literal notranslate"><span class="pre">projection_</span></code>, with one column ending in <code class="docutils literal notranslate"><span class="pre">_x</span></code> and another ending in <code class="docutils literal notranslate"><span class="pre">_y</span></code>, e.g., <code class="docutils literal notranslate"><span class="pre">projection_my_reduced_coordinate_x</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_my_reduced_coordinate_y</span></code>.</p></td>
+Visualizes data based on columns prefixed with <code class="docutils literal notranslate"><span class="pre">projection_</span></code>, with one column ending in <code class="docutils literal notranslate"><span class="pre">_x</span></code> and another ending in <code class="docutils literal notranslate"><span class="pre">_y</span></code>, e.g., <code class="docutils literal notranslate"><span class="pre">projection_my_reduced_coordinate_x</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_my_reduced_coordinate_y</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_scatterplot
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
+</td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_scatterplot">symphony_scatterplot</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Summary</p></td>
@@ -409,13 +450,24 @@ One <code class="docutils literal notranslate"><span class="pre">SummaryElement<
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_summary
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
 </td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_summary">symphony_summary</a></p></td>
 </tr>
 <tr class="row-even"><td><p>Vega</p></td>
 <td><p>A Vega component that displays a list of Vega-Lite specs.
 Specs can be provided via the prop <code class="docutils literal notranslate"><span class="pre">vega_elements</span></code>.
-If you want to access data from the table, simply provide <code class="docutils literal notranslate"><span class="pre">&quot;values&quot;:</span> <span class="pre">&quot;arrow_table&quot;</span></code> to the data property of the Vega spec.</p></td>
+If you want to access data from the table, simply provide <code class="docutils literal notranslate"><span class="pre">&quot;values&quot;:</span> <span class="pre">&quot;arrow_table&quot;</span></code> to the data property of the Vega spec.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>symphony_vega
+</pre></div>
+</div>
+<p>To learn how to use Symphony, see the <a class="reference external" href="https://apple.github.io/ml-symphony/">documentation</a>.</p>
+<p>To learn about how to build Symphony from source and how to contribute to the framework, please look at <a class="reference external" href="../CONTRIBUTING.md">CONTRIBUTING.md</a> and the <a class="reference external" href="https://apple.github.io/ml-symphony/contributing.html">development documentation</a>.</p>
+</td>
 <td><p><a class="reference external" href="https://github.com/apple/ml-symphony/tree/main/widgets/symphony_vega">symphony_vega</a></p></td>
 </tr>
 </tbody>

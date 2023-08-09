@@ -6,7 +6,7 @@ Available Components
 ********************
 
 Symphony contains a number of default components that can get you started with data and model analysis.
-These can be installed using :code:`pip install -i package_name`, and passed into 
+These can be installed using :code:`pip install package_name`, and passed into 
 Symphony using `symph.widget(ComponentName)`.
 
 .. csv-table:: 

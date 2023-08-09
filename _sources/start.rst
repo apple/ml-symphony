@@ -19,19 +19,19 @@ To install the main Symphony package, run:
 
 .. code-block:: bash
 
-    pip install -i symphony_ui
+    pip install symphony_ui
 
 You can then install individual components, for example:
 
 .. code-block:: bash
 
-    pip install -i symphony_summary
+    pip install symphony_summary
 
 See :doc:`components` for a list of all the other component packages. If you want to install all available components, run:
 
 .. code-block:: bash
 
-    pip install -i symphony_ui[widgets]
+    pip install "symphony_ui[widgets]"
 
 Symphony works great with `DNIKit <https://github.com/apple/dnikit>`__.
 You can use DNIKit to generate analysis data for Symphony, for example for the Familiarity and Duplicates components.
@@ -39,7 +39,7 @@ If you want to run the precomputed Symphony example that uses DNIKit, run:
 
 .. code-block:: bash
 
-    pip install -i symphony_ui[examples]
+    pip install "symphony_ui[examples]"
 
 
 =====
