@@ -7,6 +7,7 @@ Copyright (C) 2023 Apple Inc. All Rights Reserved. -->
   import type ColumnTable from 'arquero/dist/types/table/column-table';
 
   import * as confMat from '@apple/hierarchical-confusion-matrix';
+  import '@apple/hierarchical-confusion-matrix/package/style.css';
 
   import { mapHeight, ComponentHeader } from '@apple/symphony-lib';
 

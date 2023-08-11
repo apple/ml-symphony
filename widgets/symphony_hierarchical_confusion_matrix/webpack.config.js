@@ -10,10 +10,8 @@ const rules = (mode) => {
     { test: /\.js$/, loader: 'source-map-loader', exclude: /node_modules/ },
     {
       test: /\.(sa|sc|c)ss$/,
-      exclude: /node_modules/,
       use: [
-        'isomorphic-style-loader',
-        MiniCssExtractPlugin.loader,
+        'style-loader',
         'css-loader',
       ],
     },

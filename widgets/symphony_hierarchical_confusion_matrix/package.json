@@ -41,7 +41,7 @@
     "dev": "yarn run watch & python -m http.server --directory ./symphony_hierarchical_confusion_matrix/standalone 8082"
   },
   "dependencies": {
-    "@apple/hierarchical-confusion-matrix": "1.0.0",
+    "@apple/hierarchical-confusion-matrix": "1.1.1",
     "@apple/symphony-lib": "^1.0.0",
     "@jupyter-widgets/base": "^1.1.10 || ^2.0.0 || ^3.0.0 || ^4.0.0",
     "arquero": "^4.7.2"
