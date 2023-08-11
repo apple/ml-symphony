@@ -1,6 +1,6 @@
 {
   "name": "symphony-hierarchical-confusion-matrix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A confusion matrix that can display hierarchical labels.",
   "private": true,
   "keywords": [

@@ -10,4 +10,4 @@ Information about the frontend package of the widgets.
 """
 
 module_name = "symphony-hierarchical-confusion-matrix"
-module_version = "^1.0.2"
+module_version = "^1.0.3"
